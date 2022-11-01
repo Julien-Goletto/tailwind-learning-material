@@ -36,29 +36,29 @@
       <!-- [p(t|r|b|l)-px] pour ajouter un simple pixel de padding. (fusion des marges par exemple) -->
       <!-- p-[10px] si vous voulez créer une classe spéciale à la volée -->
 
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="p-2.5 bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="pl-5 bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="py-7 bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="pl-px bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="pl-[10px] bg-green-500">Lorem ipsum dolor sit amet.</p>
 
       
       <h2 class="text-4xl text-gray-50  mt-10 mb-5">Margin</h2>
 
       <!-- Exactement les mêmes classes qu'au-dessus en remplaçant le "p" par un "m" -->
 
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
-      <p class="bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="m-2.5 bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="mb-5 bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="mx-10 bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="ml-px bg-green-500">Lorem ipsum dolor sit amet.</p>
+      <p class="mt-[20px] bg-green-500">Lorem ipsum dolor sit amet.</p>
 
 
       <h2 class="text-4xl text-gray-50 mt-10 mb-5">Marge entre les enfants</h2>
 
       <!-- [space-(x|y)-(0|94)] rajoute de la marge entre les enfants, permet d'économiser du code. -->
 
-      <div class="flex">
+      <div class="flex space-x-10">
         <div class="bg-teal-300 rounded p-3 text-gray-800">01</div>
         <div class="bg-teal-300 rounded p-3 text-gray-800">02</div>
         <div class="bg-teal-300 rounded p-3 text-gray-800">03</div>
