@@ -7,7 +7,63 @@
     <title>Footer</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-
+  <body class="flex flex-col h-full">
+    <main class="my-10 mx-auto">
+      <h1 class="text-5xl text-center">Le Footer</h1>
+    </main>
+    <footer class="mt-auto p-7 bg-slate-50">
+      <div class="container mx-auto max-w-7xl">
+        <div class="pb-6 grid grid-cols-2 border-b border-b-slate-300 md:grid-cols-6">
+          <ul class="mb-8 flex flex-col gap-2">
+            <li class="mb-1 flex gap-1 items-center text-lg font-semibold"><h2>Best food</h2><span>🥐</span></li>
+            <li>French</li>
+            <li>Japanese</li>
+            <li>Italian</li>
+            <li>Spanish</li>
+          </ul>
+          <ul class="mb-8 flex flex-col gap-2">
+            <li class="mb-1 flex gap-1 items-center text-lg font-semibold"><h2>Services</h2><span>⏲️</span></li>
+            <li>Suit</li>
+            <li>Sport</li>
+            <li>Pool</li>
+            <li>Taxi</li>
+          </ul>
+          <ul class="mb-8 flex flex-col gap-2">
+            <li class="mb-1 flex gap-1 items-center text-lg font-semibold"><h2>Worldwide</h2><span>🌎</span></li>
+            <li>Tokyo</li>
+            <li>New York</li>
+            <li>London</li>
+            <li>Moscow</li>
+          </ul>
+          <ul class="mb-8 flex flex-col gap-2">
+            <li class="mb-1 flex gap-1 items-center text-lg font-semibold"><h2>Rated 10/10</h2><span>👌</span></li>
+            <li>Tripadvisor</li>
+            <li>Airbnb</li>
+            <li>Booking</li>
+            <li>Hotel</li>
+          </ul>
+          <form class="col-span-2 flex flex-col gap-4">
+            <label for="email-address" class="mb-2 text-sm font-bold uppercase tracking-wide flex gap-2">Subscribe To Our Newsletter 📬</label>
+            <input
+              type="email"
+              name="email-address"
+              id="email-address"
+              resquired
+              placeholder="Enter your email"
+              class="px-4 py-2 rounded ring-1 ring-slate-400 shadow focus:ring-indigo-500 focus:outline-none focus:placeholder:text-slate-300">
+            <button class="px-4 py-2 text-white bg-red-500 rounded-md shadow">Subscribe</button>
+          </form>
+        </div>
+        <div class="mt-4 lg:flex lg:justify-between">
+          <ul class="mb-4 flex gap-8 justify-center">
+            <li><a href="#twitter"><img src="./ressources/twitter-sign.svg" alt="twitter" class="w-6"></a></li>
+            <li><a href="#facebook"><img src="./ressources/facebook.svg" alt="facebook" class="w-6"></a></li>
+            <li><a href="#instagram"><img src="./ressources/instagram.svg" alt="instagram" class="w-6"></a></li>
+            <li><a href="#tiktok"><img src="./ressources/tiktok.svg" alt="tiktok" class="w-6"></a></li>
+          </ul>
+          <p class="text-slate-500 text-center">© Footer,All rights reserved</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
