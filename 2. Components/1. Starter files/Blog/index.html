@@ -7,8 +7,62 @@
   <title>Blog</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <main class="container"></main>
-
+<body class="bg-white">
+  <main class="container my-14 mx-auto ">
+    <h1 class="text-5xl font-extrabold text-center">Explore the Front-End World</h1>
+    <p class="text-xl text-slate-500 mt-4 text-center">Here are the last articles</p>
+    <section class="mt-4 p-6 mx-auto max-w-2xl">
+      <ul class="pb-4 w-full flex flex-col items-center gap-4">
+        <li class="p-6 w-full relative rounded bg-yellow-200 drop-shadow-lg transition ease-out hover:-translate-y-1">
+          <a href="#">
+            <h2 class="text-xl font-medium">How to create a curtain menu ?</h2>
+            <ul class="flex gap-2 mt-2">
+              <li><a href="#js" class="before:content-['#']">javascript</a></li>
+              <li><a href="#css" class="before:content-['#']">css</a></li>
+            </ul>
+            <p class="absolute top-7 right-6">1d ago</p>
+          </a>
+        </li>
+        <li class="p-6 w-full relative rounded bg-yellow-200 drop-shadow-lg transition ease-out hover:-translate-y-1">
+          <a href="#">
+            <h2 class="text-xl font-medium">How to use a .map() method ?</h2>
+            <ul class="flex gap-2 mt-2">
+              <li><a href="#js" class="before:content-['#']">javascript</a></li>
+            </ul>
+            <p class="absolute top-7 right-6">1d ago</p>
+          </a>
+        </li>
+        <li class="p-6 w-full relative rounded bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white drop-shadow-lg transition ease-out hover:-translate-y-1">
+          <a href="#">
+            <h2 class="text-xl font-medium">10 Flexbox Tricks</h2>
+            <ul class="flex gap-2 mt-2">
+              <li><a href="#css" class="before:content-['#']">css</a></li>
+            </ul>
+            <p class="absolute top-7 right-6">1d ago</p>
+          </a>
+        </li>
+        <li class="p-6 w-full relative rounded bg-gradient-to-r from-cyan-500 to-blue-500 drop-shadow-lg transition ease-out hover:-translate-y-1">
+          <a href="#">
+            <h2 class="text-xl font-medium">What are React props ?</h2>
+            <ul class="flex gap-2 mt-2">
+              <li><a href="#js" class="before:content-['#']">javascript</a></li>
+              <li><a href="#react" class="before:content-['#']">react</a></li>
+            </ul>
+            <p class="absolute top-7 right-6">1d ago</p>
+          </a>
+        </li>
+        <li class="p-6 w-full relative rounded bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white drop-shadow-lg transition ease-out hover:-translate-y-1">
+          <a href="#">
+            <h2 class="text-xl font-medium">What is CSS grid ?</h2>
+            <ul class="flex gap-2 mt-2">
+              <li><a href="#css" class="before:content-['#']">css</a></li>
+            </ul>
+            <p class="absolute top-7 right-6">1d ago</p>
+          </a>
+        </li>
+      </ul>
+      <button class="p-2 font-bold border-4 border-slate-300 rounded hover:border-slate-400" href="#LoadMore">Load more...</button>
+    </section>
+  </main>
 </body>
 </html>
