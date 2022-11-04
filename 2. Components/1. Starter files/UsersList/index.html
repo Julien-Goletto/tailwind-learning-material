@@ -7,8 +7,52 @@
     <title>User List</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-
-
+  <body class="bg-slate-50">
+    <header class="py-6 px-4 flex flex-col items-center sm:p-10">
+      <h1 class="text-3xl font-thin md:text-4xl md:w-full"><span>Your </span><span class="font-medium">Database</span></h1>
+      <div class="w-full flex flex-col items-center justify-between md:flex-row-reverse">
+        <div class="mt-6 flex gap-8 md:mt-0">
+          <button class="px-1 py-2 rounded text-slate-50 bg-blue-600">Members</button>
+          <button class="px-1 py-2 rounded">Admin</button>
+          <button class="px-1 py-2 rounded">Workers</button>
+        </div>
+        <div class="my-5 p-2 w-full border border-slate-400 rounded bg-white flex gap-2 max-w-xs md:gap-0">
+          <label for="search">
+            <img src="./ressources/magnifying-glass.svg" alt="magnifier glass icon" class="w-6 h-6">
+          </label>
+          <input type="text" class="outline-none">
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <ul class="p-4 container mx-auto grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <li class="p-4 border border-white ring-2 ring-offset-1 ring-slate-300 rounded-lg bg-slate-100 shadow-md flex gap-4">
+            <img src="./ressources/face1.jpg" alt="Jane_Doe_profile_pic" class="object-cover w-20 h-20 rounded-full">
+            <div>
+              <h2 class="text-2xl font-medium font-serif">Jane Doe</h2>
+              <p class="text-sm font-medium text-slate-400">New York, NY</p>
+              <p class="mt-2">Front-End Developper</p>
+            </div>
+          </li>
+          <li class="p-4 border border-white ring-2 ring-offset-1 ring-slate-300 rounded-lg bg-slate-100 shadow-md flex gap-4">
+            <img src="./ressources/face2.jpg" alt="Adelle_Niantropoulos" class="object-cover w-20 h-20 rounded-full">
+            <div>
+              <h2 class="text-2xl font-medium font-serif">Adelle Niantropoulos</h2>
+              <p class="text-sm font-medium text-slate-400">New York, NY</p>
+              <p class="mt-2">Web Designer</p>
+            </div>
+          </li>
+          <li class="p-4 border border-white ring-2 ring-offset-1 ring-slate-300 rounded-lg bg-slate-100 shadow-md flex gap-4">
+            <img src="./ressources/face3.jpg" alt="Jeremy_Marsten_profile_pic" class="object-cover w-20 h-20 rounded-full">
+            <div>
+              <h2 class="text-2xl font-medium font-serif">Jeremy Marsten</h2>
+              <p class="text-sm font-medium text-slate-400">New York, NY</p>
+              <p class="mt-2">Fullstack Developper</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
