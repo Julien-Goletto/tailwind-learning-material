@@ -8,6 +8,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
+  <main>
+    <section class="px-5 py-8 text-slate-50 bg-gray-800">
+      <div class="section mx-auto max-w-lg">
+        <h1 class="pb-4 text-center text-3xl font-bold">Receive a free gift 🎁</h1>
+        <p class="text-lg text-center text-slate-300 leading-tight">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nulla cumque voluptatum.</p>
+        <form action="submit" class="mt-8 flex flex-col gap-3">
+          <label for="email" class="sr-only">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+            class="px-5 py-3 ring-1 ring-transparent rounded placeholder:text-gray-500 shadow-sm">
+          <button class="py-3 bg-indigo-500 rounded shadow-sm">Subscribe</button>
+        </form>
+        <div class="my-3 flex gap-2 text-sm justify-center">
+          <p class="text-gray-300">We are not going to spam you</p>
+          <a href="#privacy_policy" class="font-semibold underline">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
