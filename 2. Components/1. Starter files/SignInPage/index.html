@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-slat5100">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,61 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
+<main class="flex">
+  <section class="flex-1 container mx-auto max-w-xl py-52 p-8">
+    <h1 class="text-2xl font-extrabold">Take a breath, sign up.</h1>
+    <a href="#signin" class="text-sm font-medium text-green-600">Already have an account ? Sign in</a>
+    <form action="submit" class="mt-4 flex flex-col">
+      <label for="email" class="mb-1 text-sm font-medium text-slate-700">Email address</label>
+      <input
+        type="email"
+        required
+        id="email"
+        name="email"
+        class="mb-4 px-3 py-2 rounded bg-white ring-1 ring-slate-300 shadow-md focus:ring-green-600 focus:outline-none"
+      >
+      <label for="password" class="mb-1 text-sm font-medium text-slate-700">Password</label>
+      <input
+        type="password"
+        required
+        id="password"
+        name="paswword"
+        class="mb-4 px-3 py-2 rounded bg-white ring-1 ring-slate-300 shadow-md focus:ring-green-600 focus:outline-none"
+      >
+      <label for="password_confirm" class="mb-1 text-sm font-medium text-slate-700">Confirm Password</label>
+      <input
+        type="password"
+        required
+        id="password_confirm"
+        name="password_confirm"
+        class="mb-4 px-3 py-2 rounded bg-white ring-1 ring-slate-300 shadow-md focus:ring-green-600 focus:outline-none"
+      >
+      <div class="flex justify-between items-center">
+        <div>
+          <input type="checkbox" id="remember" name="remember" class="accent-green-600 mr-1">
+          <label for="remember" class="mb-1 text-sm font-medium text-slate-700">Remember me</label>
+        </div>
+        <a href="#help" class="text-sm font-medium text-green-600">Need help to sign up ?</a>
+      </div>
+      <button class="my-4 py-3 bg-green-800 text-sm font-medium text-slate-50 rounded-lg shadow">Sign up</button>
+    </form>
+    <p class="text-center font-medium text-slate-500">Or sign up with</p>
+    <div class="my-3 flex gap-6 justify-center">
+        <a href="#" class="p-4 rounded-lg bg-white ring-1 ring-slate-300 shadow-lg hover:bg-slate-200">
+          <img src="./ressources/ig.svg" alt="instagram" class="w-5">
+        </a>
+        <a href="#" class="p-4 rounded-lg bg-white ring-1 ring-slate-300 shadow-lg hover:bg-slate-200">
+          <img src="./ressources/pinterest.svg" alt="pinterest" class="w-5">
+        </a>
+        <a href="#" class="p-4 rounded-lg bg-white ring-1 ring-slate-300 shadow-lg hover:bg-slate-200">
+          <img src="./ressources/tumblr.svg" alt="tumblr" class="w-5">
+        </a>
+    </div>
+  </section>
+  <div class="flex-1 hidden sm:block">
+    <img src="./ressources/nature.jpg" alt="nature picture" class=" h-full w-full object-cover">
+  </div>
+</main>
 
 </body>
 </html>
