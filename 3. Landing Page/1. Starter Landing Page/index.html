@@ -8,24 +8,43 @@
   </head>
   <body class="bg-gray-200">
     <header
-      class="fixed z-2 top-0 w-full p-4 flex flex-col justify-between items-center bg-gray-50 drop-shadow-md"
+      class="fixed z-2 top-0 w-full p-4 flex flex-col justify-between items-center bg-gray-50 drop-shadow-md md:bg-transparent md:drop-shadow-none md:relative"
     >
-      <div class="flex w-full justify-between">
-        <a href="/">
+      <div class="flex gap-8 w-full justify-between">
+        <a href="#accueil">
           <img src="ressources/RocketLogo.svg" alt="Logo" class="w-12" />
         </a>
         <button
-          class="toggle-button px-2 border border-gray-300 rounded-lg shadow-sm"
+          class="toggle-button px-2 border border-gray-300 rounded-lg shadow-sm md:hidden"
         >
           <img src="ressources/menu.svg" alt="burger menu" class="w-6" />
         </button>
+        <ul class="hidden flex-1 max-w-md justify-between items-center text-lg font-medium md:flex">
+          <li>
+            <a href="#accueil">Accueil</a>
+          </li>
+          <li>
+            <a href="#services">Nos Services</a>
+          </li>
+          <li>
+            <a href="#tarifs">Nos Tarifs</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="hidden py-2 px-6 rounded-lg bg-white text-purple-800 font-semibold shadow-lg hover:bg-slate-50 md:block"
+        >
+          Log in
+        </button>
       </div>
-      <div class="toggle-menu w-full flex flex-col items-center">
+      <div class="toggle-menu hidden w-full flex flex-col items-center">
         <ul class="mt-6 w-full">
           <li
             class="py-2 border-t border-t-slate-300 text-center text-lg font-medium"
           >
-            <a href="/">Accueil</a>
+            <a href="#accueil">Accueil</a>
           </li>
           <li
             class="py-2 border-t border-t-slate-300 text-center text-lg font-medium"
@@ -44,79 +63,89 @@
           </li>
         </ul>
         <button
-          class="mt-6 py-2 px-16 border border-slate-400 rounded-lg bg-white text-purple-800 font-bold shadow-lg hover:bg-slate-50"
+          class="mt-6 py-2 px-16 border border-slate-400 rounded-lg bg-white text-purple-800 font-semibold shadow-lg hover:bg-slate-50"
         >
           Log in
         </button>
       </div>
     </header>
-    <main class="mt-20">
-      <section
-        class="px-auto pt-20 pb-6 px-6 flex flex-col gap-5 bg-stylish-mesh"
-      >
-        <h1 class="text-center text-3xl font-black uppercase">
-          Faites décoller votre
-          <span class="text-blue-700">Business en ligne</span>
-        </h1>
-        <p class="text-center text-gray-700">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
-          cumque laudantium possimus eaque ipsa.
-        </p>
-        <div class="flex flex-col gap-5 items-center justify-center">
-          <button
-            class="py-3 min-w-[250px] rounded-lg bg-blue-700 text-sm font-medium text-gray-50 shadow"
-          >
-            Commencer 🚀
-          </button>
-          <button
-            class="py-3 min-w-[250px] rounded-lg bg-white text-sm font-medium shadow"
-          >
-            Démo 🕹️
-          </button>
-        </div>
-        <a
-          href="#services"
-          class="mt-20 mx-auto w-12 h-12 flex justify-center items-center rounded-full bg-white shadow-lg animate-bounce"
+    <main class="mt-20 md:mt-0">
+      <section id="accueil" class="bg-stylish-mesh">
+        <div
+          class="container mx-auto max-w-6xl pt-20 pb-6 px-6 flex flex-col gap-5"
         >
-          <svg
-            class="w-6 h-6 text-violet-500 sm:w-8 sm:h-8"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+          <h1
+            class="text-center text-3xl font-black uppercase sm:text-4xl md:text-5xl"
           >
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </a>
-      </section>
-      <section id="services" class="flex flex-col gap-5 cta-striper-bg">
-        <img
-          src="./ressources/hommeTravail.jpg"
-          alt="man working"
-          class="h-96 w-full object-cover"
-        />
-        <div class="mt-6 mb-10 mx-16 flex flex-col gap-4 items-center]">
-          <h2 class="flex flex-col text-2xl text-center font-extrabold">
-            <span class="uppercase">Passez à l'action</span
-            ><span class="text-blue-900">Boostez votre SEO</span>
-          </h2>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime
-            beatae commodi.
+            Faites décoller votre
+            <span class="text-blue-700">Business en ligne</span>
+          </h1>
+          <p class="text-center text-gray-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+            cumque laudantium possimus eaque ipsa.
           </p>
-          <button
-            class="py-3 min-w-[250px] rounded-lg bg-blue-700 text-sm font-medium text-gray-50 shadow"
+          <div
+            class="flex flex-col gap-5 items-center justify-center md:flex-row"
           >
-            Essayez-le 🔥
-          </button>
+            <button
+              class="py-3 min-w-[250px] rounded-lg bg-blue-700 text-sm font-medium text-gray-50 shadow"
+            >
+              Commencer 🚀
+            </button>
+            <button
+              class="py-3 min-w-[250px] rounded-lg bg-white text-sm font-medium shadow"
+            >
+              Démo 🕹️
+            </button>
+          </div>
+          <a
+            href="#services"
+            class="mt-20 mx-auto w-12 h-12 flex justify-center items-center rounded-full bg-white shadow-lg animate-bounce"
+          >
+            <svg
+              class="w-6 h-6 text-violet-500 sm:w-8 sm:h-8"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section id="services" class="flex flex-col cta-striper-bg">
+        <div class="flex flex-col gap-5 lg:flex-row-reverse">
+          <img
+            src="./ressources/hommeTravail.jpg"
+            alt="man working"
+            class="h-96 w-full flex-1 object-cover"
+          />
+          <div
+            class="mt-6 mb-10 mx-16 flex-1 flex flex-col gap-4 items-center lg:my-auto"
+          >
+            <h2 class="flex flex-col text-2xl text-center font-extrabold">
+              <span class="uppercase">Passez à l'action</span
+              ><span class="text-blue-900">Boostez votre SEO</span>
+            </h2>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime
+              beatae commodi.
+            </p>
+            <button
+              class="py-3 min-w-[250px] rounded-lg bg-blue-700 text-sm font-medium text-gray-50 shadow"
+            >
+              Essayez-le 🔥
+            </button>
+          </div>
         </div>
         <div
           class="py-12 px-6 flex flex-col gap-8 bg-gradient-to-r from-blue-700 to-blue-500 text-center text-slate-50"
         >
           <div class="text-center">
-            <h2 class="mb-3 text-3xl font-extrabold">
+            <h2 class="mb-3 text-3xl font-extrabold sm:text-4xl lg:text-5xl">
               10K+ Développeurs déjà convaincus
             </h2>
             <p class="text-slate-300">
@@ -124,29 +153,31 @@
               repellat dicta, id at ducimus porro aliquid ?
             </p>
           </div>
-          <h2 class="flex flex-col">
-            <span class="text-3xl font-extrabold">100%</span
-            ><span class="text-slate-300">En ligne</span>
-          </h2>
-          <h2 class="flex flex-col">
-            <span class="text-3xl font-extrabold">24/7</span
-            ><span class="text-slate-300">Support</span>
-          </h2>
-          <h2 class="flex flex-col">
-            <span class="text-3xl font-extrabold">100K+</span
-            ><span class="text-slate-300">Projets</span>
-          </h2>
+          <div class="flex flex-col gap-8 justify-center sm:flex-row">
+            <h2 class="flex flex-col">
+              <span class="text-3xl font-extrabold">100%</span
+              ><span class="text-slate-300">En ligne</span>
+            </h2>
+            <h2 class="flex flex-col">
+              <span class="text-3xl font-extrabold">24/7</span
+              ><span class="text-slate-300">Support</span>
+            </h2>
+            <h2 class="flex flex-col">
+              <span class="text-3xl font-extrabold">100K+</span
+              ><span class="text-slate-300">Projets</span>
+            </h2>
+          </div>
         </div>
       </section>
-      <section class="py-16 px-6 flex flex-col items-center gap-10">
+      <section id="tarifs" class="py-16 px-6 flex flex-col items-center gap-10">
         <h1 class="text-5xl font-extrabold">Prices range</h1>
         <p class="text-lg text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam est
           voluptatum recusandae ?
         </p>
-        <ul class="min-w-[280px] min-h-[450px] grid grid-cols-1 gap-5">
+        <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           <li
-            class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
+            class="min-w-[280px] min-h-[450px] p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
           >
             <div>
               <h2 class="text-2xl font-bold">Basic</h2>
@@ -188,7 +219,7 @@
             </button>
           </li>
           <li
-            class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
+            class="min-w-[280px] min-h-[450px] p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
           >
             <div>
               <h2 class="text-2xl font-bold">Basic</h2>
@@ -199,6 +230,14 @@
               </p>
               <p class="mb-8 uppercase text-xs font-medium">Included :</p>
               <ul class="mb-8 flex flex-col gap-4">
+                <li class="flex gap-3">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
+                  <p class="text-sm font-medium">Potenti felis, in cras at.</p>
+                </li>
                 <li class="flex gap-3">
                   <img
                     src="./ressources/checked.svg"
@@ -230,7 +269,7 @@
             </button>
           </li>
           <li
-            class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
+            class="min-w-[280px] min-h-[450px] p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
           >
             <div>
               <h2 class="text-2xl font-bold">Basic</h2>
@@ -241,6 +280,30 @@
               </p>
               <p class="mb-8 uppercase text-xs font-medium">Included :</p>
               <ul class="mb-8 flex flex-col gap-4">
+                <li class="flex gap-3">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
+                  <p class="text-sm font-medium">Potenti felis, in cras at.</p>
+                </li>
+                <li class="flex gap-3">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
+                  <p class="text-sm font-medium">Potenti felis, in cras at.</p>
+                </li>
+                <li class="flex gap-3">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
+                  <p class="text-sm font-medium">Potenti felis, in cras at.</p>
+                </li>
                 <li class="flex gap-3">
                   <img
                     src="./ressources/checked.svg"
@@ -302,12 +365,12 @@
           />
         </div>
       </section>
-      <section class="py-10">
+      <section id="contact" class="py-10">
         <h1 class="text-3xl font-medium text-center">Rentrons en contact</h1>
         <hr class="mx-auto mt-4 mb-8 w-16 h-1 bg-slate-600" />
         <form
           action="submit"
-          class="py-16 px-8 flex flex-col items-start bg-slate-50 text-gray-500"
+          class="mx-auto container max-w-2xl py-16 px-8 flex flex-col items-start bg-slate-50 text-gray-500 rounded shadow"
         >
           <label for="firstname" class="mb-2">Nom complet</label>
           <input
