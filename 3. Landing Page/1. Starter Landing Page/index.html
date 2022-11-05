@@ -4,136 +4,311 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page SEO</title>
-    <link rel="stylesheet" href="./dist/main.css"/>
+    <link rel="stylesheet" href="./dist/main.css" />
   </head>
   <body class="bg-gray-200">
-    <header class="p-4 flex justify-between bg-gray-50 drop-shadow-md">
-      <a href="/">
-        <img src="ressources/RocketLogo.svg" alt="Logo" class="w-12">
-      </a>
-      <button class="px-2 border border-gray-300 rounded-lg shadow-sm">
-        <img src="ressources/menu.svg" alt="burger menu" class="w-6">
-      </button>
+    <header
+      class="fixed z-2 top-0 w-full p-4 flex flex-col justify-between items-center bg-gray-50 drop-shadow-md"
+    >
+      <div class="flex w-full justify-between">
+        <a href="/">
+          <img src="ressources/RocketLogo.svg" alt="Logo" class="w-12" />
+        </a>
+        <button
+          class="toggle-button px-2 border border-gray-300 rounded-lg shadow-sm"
+        >
+          <img src="ressources/menu.svg" alt="burger menu" class="w-6" />
+        </button>
+      </div>
+      <div class="toggle-menu w-full flex flex-col items-center">
+        <ul class="mt-6 w-full">
+          <li
+            class="py-2 border-t border-t-slate-300 text-center text-lg font-medium"
+          >
+            <a href="/">Accueil</a>
+          </li>
+          <li
+            class="py-2 border-t border-t-slate-300 text-center text-lg font-medium"
+          >
+            <a href="#services">Nos Services</a>
+          </li>
+          <li
+            class="py-2 border-t border-t-slate-300 text-center text-lg font-medium"
+          >
+            <a href="#tarifs">Nos Tarifs</a>
+          </li>
+          <li
+            class="py-2 border-t border-t-slate-300 border-b border-b-slate-300 text-center text-lg font-medium"
+          >
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="mt-6 py-2 px-16 border border-slate-400 rounded-lg bg-white text-purple-800 font-bold shadow-lg hover:bg-slate-50"
+        >
+          Log in
+        </button>
+      </div>
     </header>
-    <main>
-      <section class="px-auto pt-20 px-6 flex flex-col gap-5 bg-stylish-mesh">
-        <h1 class="text-center text-3xl font-black uppercase">Faites décoller votre <span class="text-blue-700">Business en ligne</span></h1>
-        <p class="text-center text-gray-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis cumque laudantium possimus eaque ipsa.</p>
+    <main class="mt-20">
+      <section
+        class="px-auto pt-20 pb-6 px-6 flex flex-col gap-5 bg-stylish-mesh"
+      >
+        <h1 class="text-center text-3xl font-black uppercase">
+          Faites décoller votre
+          <span class="text-blue-700">Business en ligne</span>
+        </h1>
+        <p class="text-center text-gray-700">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+          cumque laudantium possimus eaque ipsa.
+        </p>
         <div class="flex flex-col gap-5 items-center justify-center">
-          <button class="py-3 min-w-[250px] rounded-lg bg-blue-700 text-sm font-medium text-gray-50 shadow">Commencer 🚀</button>
-          <button class="py-3 min-w-[250px] rounded-lg bg-white text-sm font-medium shadow">Démo 🕹️</button>
+          <button
+            class="py-3 min-w-[250px] rounded-lg bg-blue-700 text-sm font-medium text-gray-50 shadow"
+          >
+            Commencer 🚀
+          </button>
+          <button
+            class="py-3 min-w-[250px] rounded-lg bg-white text-sm font-medium shadow"
+          >
+            Démo 🕹️
+          </button>
         </div>
-        <a href="#services" class="mt-20 mx-auto w-12 h-12 flex justify-center items-center rounded-full bg-white shadow-lg animate-bounce">
-          <svg class="w-6 h-6 text-violet-500 sm:w-8 sm:h-8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+        <a
+          href="#services"
+          class="mt-20 mx-auto w-12 h-12 flex justify-center items-center rounded-full bg-white shadow-lg animate-bounce"
+        >
+          <svg
+            class="w-6 h-6 text-violet-500 sm:w-8 sm:h-8"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
           </svg>
         </a>
       </section>
       <section id="services" class="flex flex-col gap-5 cta-striper-bg">
-        <img src="./ressources/hommeTravail.jpg" alt="man working" class="h-96 w-full object-cover">
+        <img
+          src="./ressources/hommeTravail.jpg"
+          alt="man working"
+          class="h-96 w-full object-cover"
+        />
         <div class="mt-6 mb-10 mx-16 flex flex-col gap-4 items-center]">
-          <h2 class="flex flex-col text-2xl text-center font-extrabold"><span class="uppercase">Passez à l'action</span><span class="text-blue-900">Boostez votre SEO</span></h2>
-          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime beatae commodi.</p>
-          <button class="py-3 min-w-[250px] rounded-lg bg-blue-700 text-sm font-medium text-gray-50 shadow">Essayez-le 🔥</button>
+          <h2 class="flex flex-col text-2xl text-center font-extrabold">
+            <span class="uppercase">Passez à l'action</span
+            ><span class="text-blue-900">Boostez votre SEO</span>
+          </h2>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime
+            beatae commodi.
+          </p>
+          <button
+            class="py-3 min-w-[250px] rounded-lg bg-blue-700 text-sm font-medium text-gray-50 shadow"
+          >
+            Essayez-le 🔥
+          </button>
         </div>
-        <div class="py-12 px-6 flex flex-col gap-8 bg-gradient-to-r from-blue-700 to-blue-500 text-center text-slate-50">
+        <div
+          class="py-12 px-6 flex flex-col gap-8 bg-gradient-to-r from-blue-700 to-blue-500 text-center text-slate-50"
+        >
           <div class="text-center">
-            <h2 class="mb-3 text-3xl font-extrabold">10K+ Développeurs déjà convaincus</h2>
-            <p class="text-slate-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est repellat dicta, id at ducimus porro aliquid ?</p>
+            <h2 class="mb-3 text-3xl font-extrabold">
+              10K+ Développeurs déjà convaincus
+            </h2>
+            <p class="text-slate-300">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+              repellat dicta, id at ducimus porro aliquid ?
+            </p>
           </div>
-          <h2 class="flex flex-col"><span class="text-3xl font-extrabold">100%</span><span class="text-slate-300">En ligne</span></h2>
-          <h2 class="flex flex-col"><span class="text-3xl font-extrabold">24/7</span><span class="text-slate-300">Support</span></h2>
-          <h2 class="flex flex-col"><span class="text-3xl font-extrabold">100K+</span><span class="text-slate-300">Projets</span></h2>
+          <h2 class="flex flex-col">
+            <span class="text-3xl font-extrabold">100%</span
+            ><span class="text-slate-300">En ligne</span>
+          </h2>
+          <h2 class="flex flex-col">
+            <span class="text-3xl font-extrabold">24/7</span
+            ><span class="text-slate-300">Support</span>
+          </h2>
+          <h2 class="flex flex-col">
+            <span class="text-3xl font-extrabold">100K+</span
+            ><span class="text-slate-300">Projets</span>
+          </h2>
         </div>
       </section>
       <section class="py-16 px-6 flex flex-col items-center gap-10">
         <h1 class="text-5xl font-extrabold">Prices range</h1>
-        <p class="text-lg text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam est voluptatum recusandae ?</p>
+        <p class="text-lg text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam est
+          voluptatum recusandae ?
+        </p>
         <ul class="min-w-[280px] min-h-[450px] grid grid-cols-1 gap-5">
-          <li class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg">
+          <li
+            class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
+          >
             <div>
               <h2 class="text-2xl font-bold">Basic</h2>
               <p>Fill your basic needs</p>
-              <p class="mt-4"><span class="text-4xl font-extrabold">12€</span><span class="font-medium">/month</span></p>
+              <p class="mt-4">
+                <span class="text-4xl font-extrabold">12€</span
+                ><span class="font-medium">/month</span>
+              </p>
               <p class="mb-8 uppercase text-xs font-medium">Included :</p>
               <ul class="mb-8 flex flex-col gap-4">
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
               </ul>
             </div>
-            <button class="py-2 rounded bg-gray-900 font-medium text-slate-50">Subscribe to this plan</button>
+            <button class="py-2 rounded bg-gray-900 font-medium text-slate-50">
+              Subscribe to this plan
+            </button>
           </li>
-          <li class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg">
+          <li
+            class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
+          >
             <div>
               <h2 class="text-2xl font-bold">Basic</h2>
               <p>Fill your basic needs</p>
-              <p class="mt-4"><span class="text-4xl font-extrabold">12€</span><span class="font-medium">/month</span></p>
+              <p class="mt-4">
+                <span class="text-4xl font-extrabold">12€</span
+                ><span class="font-medium">/month</span>
+              </p>
               <p class="mb-8 uppercase text-xs font-medium">Included :</p>
               <ul class="mb-8 flex flex-col gap-4">
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
               </ul>
             </div>
-            <button class="py-2 rounded bg-gray-900 font-medium text-slate-50">Subscribe to this plan</button>
+            <button class="py-2 rounded bg-gray-900 font-medium text-slate-50">
+              Subscribe to this plan
+            </button>
           </li>
-          <li class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg">
+          <li
+            class="p-4 flex flex-col justify-between ring-1 ring-slate-300 rounded-lg shadow-lg"
+          >
             <div>
               <h2 class="text-2xl font-bold">Basic</h2>
               <p>Fill your basic needs</p>
-              <p class="mt-4"><span class="text-4xl font-extrabold">12€</span><span class="font-medium">/month</span></p>
+              <p class="mt-4">
+                <span class="text-4xl font-extrabold">12€</span
+                ><span class="font-medium">/month</span>
+              </p>
               <p class="mb-8 uppercase text-xs font-medium">Included :</p>
               <ul class="mb-8 flex flex-col gap-4">
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
                 <li class="flex gap-3">
-                  <img src="./ressources/checked.svg" alt="Check symbol" class="w-5 h-5">
+                  <img
+                    src="./ressources/checked.svg"
+                    alt="Check symbol"
+                    class="w-5 h-5"
+                  />
                   <p class="text-sm font-medium">Potenti felis, in cras at.</p>
                 </li>
               </ul>
             </div>
-            <button class="py-2 rounded bg-gray-900 font-medium text-slate-50">Subscribe to this plan</button>
+            <button class="py-2 rounded bg-gray-900 font-medium text-slate-50">
+              Subscribe to this plan
+            </button>
           </li>
         </ul>
       </section>
-      <section class="py-10 px-6 flex flex-col gap-8 divider-bg bg-gradient-to-r from-blue-200 to-purple-300">
-        <h1 class="text-4xl font-bold text-center">Ces entreprises nous font confiance</h1>
+      <section
+        class="py-10 px-6 flex flex-col gap-8 divider-bg bg-gradient-to-r from-blue-200 to-purple-300"
+      >
+        <h1 class="text-4xl font-bold text-center">
+          Ces entreprises nous font confiance
+        </h1>
         <div class="flex justify-center items-center">
-          <img src="./ressources/IBM.png" alt="ibm" class="h-6 w-14 object-contain">
-          <img src="./ressources/apple-logo.png" alt="apple" class="h-7 w-14 object-contain">
-          <img src="./ressources/github-logo.png" alt="github" class="h-7 w-14 object-contain">
-          <img src="./ressources/Audi.png" alt="audi" class="h-8 w-14 object-contain">
+          <img
+            src="./ressources/IBM.png"
+            alt="ibm"
+            class="h-6 w-14 object-contain"
+          />
+          <img
+            src="./ressources/apple-logo.png"
+            alt="apple"
+            class="h-7 w-14 object-contain"
+          />
+          <img
+            src="./ressources/github-logo.png"
+            alt="github"
+            class="h-7 w-14 object-contain"
+          />
+          <img
+            src="./ressources/Audi.png"
+            alt="audi"
+            class="h-8 w-14 object-contain"
+          />
         </div>
       </section>
       <section class="py-10">
         <h1 class="text-3xl font-medium text-center">Rentrons en contact</h1>
-        <hr class="mx-auto mt-4 mb-8 w-16 h-1 bg-slate-600">
-        <form action="submit" class="py-16 px-8 flex flex-col items-start bg-slate-50 text-gray-500">
+        <hr class="mx-auto mt-4 mb-8 w-16 h-1 bg-slate-600" />
+        <form
+          action="submit"
+          class="py-16 px-8 flex flex-col items-start bg-slate-50 text-gray-500"
+        >
           <label for="firstname" class="mb-2">Nom complet</label>
           <input
             type="text"
@@ -141,7 +316,8 @@
             name="firstname"
             id="firstname"
             placeholder="Votre nom..."
-            class="mb-6 py-2 px-4 w-full border border-slate-300 rounded shadow-sm focus:placeholder:text-gray-300">
+            class="mb-6 py-2 px-4 w-full border border-slate-300 rounded shadow-sm focus:placeholder:text-gray-300"
+          />
           <label for="lastname" class="mb-2">Prénom</label>
           <input
             type="text"
@@ -149,7 +325,8 @@
             name="lastname"
             id="lastname"
             placeholder="Votre prénom"
-            class="mb-6 py-2 px-4 w-full border border-slate-300 rounded shadow-sm focus:placeholder:text-gray-300">
+            class="mb-6 py-2 px-4 w-full border border-slate-300 rounded shadow-sm focus:placeholder:text-gray-300"
+          />
           <label for="companyname..." class="mb-2">Votre entreprise</label>
           <input
             type="text"
@@ -157,44 +334,55 @@
             name="companyname"
             id="companyname"
             placeholder="Nom de votre société..."
-            class="mb-6 py-2 px-4 w-full border border-slate-300 rounded shadow-sm focus:placeholder:text-gray-300">
+            class="mb-6 py-2 px-4 w-full border border-slate-300 rounded shadow-sm focus:placeholder:text-gray-300"
+          />
           <label for="message" class="mb-2">Votre message</label>
-          <textarea 
-            name="message" 
-            id="message" 
-            placeholder="Votre message..." 
-            class="mb-6 py-2 px-4 w-full border border-slate-300 rounded shadow-sm focus:placeholder:text-gray-300">
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Votre message..."
+            class="mb-6 py-2 px-4 w-full border border-slate-300 rounded shadow-sm focus:placeholder:text-gray-300"
+          >
           </textarea>
-          <button class="py-3 px-6 rounded text-slate-50 bg-blue-800">Envoyer</button>
+          <button class="py-3 px-6 rounded text-slate-50 bg-blue-800">
+            Envoyer
+          </button>
         </form>
       </section>
-      <footer class="py-6 px-auto flex flex-col gap-4 items-center text-slate-50 bg-gray-900">
+      <footer
+        class="py-6 px-auto flex flex-col gap-4 items-center text-slate-50 bg-gray-900"
+      >
         <h1 class="text-3xl">Retrouvez-nous ici :</h1>
         <ul class="flex gap-4">
           <li>
             <a href="#">
-              <img src="ressources/fb.svg" alt="facebook" class="w-6">
+              <img src="ressources/fb.svg" alt="facebook" class="w-6" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="ressources/instagram.svg" alt="instagram" class="w-6">
+              <img src="ressources/instagram.svg" alt="instagram" class="w-6" />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="ressources/githubpetitlogo.svg" alt="github" class="w-6">
+              <img
+                src="ressources/githubpetitlogo.svg"
+                alt="github"
+                class="w-6"
+              />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="ressources/twitter.svg" alt="twitter" class="w-6">
+              <img src="ressources/twitter.svg" alt="twitter" class="w-6" />
             </a>
           </li>
         </ul>
-        <hr class="w-32 h-[1px] mb-2 bg-slate-50">
+        <hr class="w-32 h-[1px] mb-2 bg-slate-50" />
         <p class="text-slate-400">© 2022 SEOTOOL, TOUS DROITS RÉSERVÉS</p>
       </footer>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
