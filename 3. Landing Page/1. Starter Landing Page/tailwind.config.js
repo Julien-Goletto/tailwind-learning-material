@@ -2,7 +2,14 @@
 module.exports = {
   content: ["**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'menu': '100px &fr 100px',
+      },
+      backgroundImage: {
+        'stylish-mesh': "url('../ressources/stylish-mesh-bg.jpg')",
+      },
+    },
   },
   plugins: [],
 }
